@@ -1,0 +1,196 @@
+.logo{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+.nav{
+    width: 73%;
+    padding: 1%;
+}
+.heroImg{
+    width: 600px;
+    padding: 25px;
+}
+.content{
+    width: 500px;
+    margin: 0 auto;
+}
+.footer{
+    background-color: #373738;
+}
+#sidebar{
+    float: left;
+}
+#main-content{
+    float: right;
+    overflow: auto;
+    width: 100%;
+}
+/* Added CSS for sidenav*/
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+  }
+  
+  .sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #5D5FEF;
+  }
+  
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* Button Auto Layout */
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+    position: relative;
+    width: 102px;
+    height: 49px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+/* Button Text */
+
+.buttonText{
+    position: static;
+    width: 62px;
+    height: 29px;
+    left: 20px;
+    top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 132.69%;
+/* or 29px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-variant: small-caps;
+
+/* Iris/100 */
+    color: #5D5FEF;
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+/* Logo Auto Layout */
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 25px;
+
+    position: relative;
+    width: 99px;
+    height: 99px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.logoText{  
+    position: static;
+    width: 49px;
+    height: 29px;
+    left: 25px;
+    top: 35px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 132.69%;
+/* or 29px */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-variant: small-caps;
+
+/* Iris/100 */
+    color: #5D5FEF;
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 50px 0px;
+}
+/* Name Hover State */
+#name{
+    position: relative;
+    width: 518px;
+    height: 75px;
+}
+#nameHover{
+    position: static;
+    width: 508px;
+    height: 65px;
+    left: 5px;
+    top: 5px;
+
+    font-family: Zilla Slab Highlight;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 105%;
+/* or 63px */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.015em;
+    font-variant: small-caps;
+/* Iris/100 */
+    color: #5D5FEF;
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 10px;
+}
+/* Side Nav */
+.sidenav{
+    position: absolute;
+    width: 139px;
+    height: 624px;
+    left: 28px;
+    top: 43px;
+}
