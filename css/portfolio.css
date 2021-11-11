@@ -1,23 +1,3 @@
-.logo{
-    width: 23%;
-    padding: 1%;
-    text-align: center;
-}
-.nav{
-    width: 73%;
-    padding: 1%;
-}
-.heroImg{
-    width: 600px;
-    padding: 25px;
-}
-.content{
-    width: 500px;
-    margin: 0 auto;
-}
-.footer{
-    background-color: #373738;
-}
 #sidebar{
     float: left;
 }
@@ -29,30 +9,40 @@
 /* Added CSS for sidenav*/
 body {
     font-family: "Roboto", sans-serif;
+    color: #fff;
     background-color: black;
   }
-  
+
+  .content{
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+      font-size: 16px;
+      width: 75%;
+      display: flex;
+  }
+
   .sidenav {
-    width: 130px;
+    width: 25%;
     position: fixed;
     z-index: 1;
     bottom: 0;
     left: 10px;
     overflow-x: hidden;
     padding: 8px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-variant-caps: small-caps;
   }
   
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     text-align: center;
-    font-variant: small-caps;
+    font-variant-caps: small-caps;
     color: #FFFFFF;
     display: block;
   }
@@ -156,7 +146,7 @@ body {
 }
 /* Name Hover State */
 #name{
-    position: relative;
+    position: sticky;
     width: 518px;
     height: 75px;
 }
