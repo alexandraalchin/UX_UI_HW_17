@@ -27,8 +27,7 @@
     background-color: #373738;
 }
 .ul{
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     list-style-type: disc;
     margin-top: 1em;
     margin-bottom: 1 em;
