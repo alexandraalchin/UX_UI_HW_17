@@ -36,6 +36,11 @@ body {
     color: black;
 }
 
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
   .sidenav {
     display: flex;
     flex-direction: column;
