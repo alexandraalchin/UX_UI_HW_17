@@ -14,9 +14,8 @@ body {
 }
 
 #name {
-    padding: 8px 8px 8px 8px;
     font-family: 'Zilla Slab', serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: light 300;
     color: #5C5444;
 }
@@ -41,6 +40,12 @@ body {
     color: black;
 }
 
+#tagline {
+    font-style: small-caps;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
   .sidenav {
     display: flex;
     flex-direction: column;
@@ -52,7 +57,7 @@ body {
     padding: 10px 0;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-variant-caps: small-caps;
+    font-variant: small-caps;
   }
   
   .sidenav a {
@@ -63,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    font-variant-caps: small-caps;
+    font-variant: small-caps;
     color: #5C5444;
     display: block;
   }
@@ -78,7 +83,7 @@ body {
   }
 
 /* Button Auto Layout */
-.button{
+.button {
     display: flex;
     flex-direction: row;
     justify-content: center;
