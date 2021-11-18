@@ -44,10 +44,7 @@ body {
   }
   
   .sidenav a:hover {
-    color: #DDC9A4;
-    background-color: black;
-    border-radius: 5px;
-    padding: 10px;
+    color: black;
   }
 
 @media screen and (max-height: 450px) {
@@ -69,36 +66,4 @@ body {
 
     background: #FFFFFF;
     border-radius: 5px;
-}
-/* Name Hover State */
-#name{
-    position: sticky;
-    width: 518px;
-    height: 75px;
-}
-#nameHover{
-    position: static;
-    width: 508px;
-    height: 65px;
-    left: 5px;
-    top: 5px;
-
-    font-family: Zilla Slab Highlight;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 105%;
-/* or 63px */
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.015em;
-    font-variant: small-caps;
-/* Iris/100 */
-    color: #5D5FEF;
-/* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
-    margin: 0px 10px;
 }
