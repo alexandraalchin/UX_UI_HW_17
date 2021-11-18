@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto&family=Zilla+Slab+Highlight:wght@700&family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Roboto&family=Zilla+Slab+Highlight:wght@700&family=Zilla+Slab:wght@300&display=swap');
 
-/* Added CSS for sidenav*/
 body {
     font-family: "Roboto", sans-serif;
     color: black;
@@ -12,9 +13,24 @@ body {
     justify-content: center;
 }
 
+#name {
+    padding: 8px 8px 8px 8px;
+    font-family: 'Zilla Slab', serif;
+    font-size: 50px;
+    font-weight: light 300;
+    color: #5C5444;
+}
+
+#name:hover {
+    font-family: 'Zilla Slab Highlight', cursive;;
+    font-weight: bold 700;
+    color: black;
+}
+
 .content {
     display: flex;
     float: right;
+    margin-top: 25px;
     width: 85%;
     font-family: "Roboto", sans-serif;
     color: black;
@@ -23,7 +39,7 @@ body {
   .sidenav {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 10%;
     position: fixed;
     bottom: 25px;
     left: 0;
