@@ -2,26 +2,30 @@
 /* Added CSS for sidenav*/
 body {
     font-family: "Roboto", sans-serif;
-    color: #5C5444;
+    color: black;
     background-color: #DDC9A4;
   }
 
-  #content {
-      font-family: "Roboto", sans-serif;
-      color: #5C5444;
-      font-size: 16px;
-      display: flex;
-      float: right;
-      overflow: auto;
-      width: 100%;
-  }
+.header {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    float: right;
+    width: 85%;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
 
   .sidenav {
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
     position: fixed;
-    float: left;
-    z-index: 1;
-    bottom: 50px;
+    bottom: 25px;
     left: 0;
     overflow-x: hidden;
     padding: 10px 0;
