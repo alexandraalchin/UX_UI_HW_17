@@ -7,12 +7,6 @@ body {
   background-color: #DDC9A4;
 }
 
-.header {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-}
-
 #name {
   font-family: 'Zilla Slab', serif;
   font-size: 60px;
@@ -30,7 +24,7 @@ body {
   display: flex;
   float: right;
   margin-top: 25px;
-  width: 85%;
+  width: 80%;
   font-family: "Roboto", sans-serif;
   color: black;
 }
@@ -46,10 +40,16 @@ body {
   font-weight: lighter;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
 .sidenav {
   display: flex;
   flex-direction: column;
-  width: 10%;
+  width: 15%;
   position: fixed;
   bottom: 25px;
   left: 25px;
@@ -81,27 +81,21 @@ body {
   text-decoration: underline;
 }
 
-.button {
+.footer-center {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
-
-  position: relative;
-  width: 102px;
-  height: 49px;
-
-  background: #FFFFFF;
-  border-radius: 5px;
-}
-
-.footer {
-  position: fixed;
+  justify-content:center;
   bottom: 10px;
 }
 
-.footer_a a {
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  bottom: 10px;
+}
+
+.footer-right a {
   padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -110,10 +104,10 @@ body {
   color: #5C5444;
 }
   
-.footer_a a:hover {
+.footer-right a:hover {
   color: black;
 }
 
-.footer_a a.active {
+.footer-right a.active {
   text-decoration: underline;
 }
