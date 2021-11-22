@@ -7,6 +7,16 @@ body {
   background-color: #DDC9A4;
 }
 
+.layout {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "sidenav sidenav header header header header"
+    "sidenav sidenav content content content content"
+    "sidenav sidenav footer footer footer footer";
+}
+
 #name {
   font-family: 'Zilla Slab', serif;
   font-size: 60px;
@@ -20,9 +30,12 @@ body {
   color: black;
 }
 
+.header {
+  grid-area: header;
+}
+
 .content {
-  display: flex;
-  float: right;
+  grid-area: content;
   margin-top: 25px;
   width: 80%;
   font-family: "Roboto", sans-serif;
@@ -40,21 +53,14 @@ body {
   font-weight: lighter;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-}
-
 .sidenav {
+  grid-area: sidenav;
   display: flex;
   flex-direction: column;
   width: 15%;
   position: fixed;
   bottom: 25px;
-  left: 25px;
   overflow-x: hidden;
-  padding: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-variant: small-caps;
@@ -65,7 +71,6 @@ body {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  display: flex;
   align-items: center;
   text-align: center;
   font-variant: small-caps;
@@ -81,21 +86,27 @@ body {
   text-decoration: underline;
 }
 
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  right: 10px;
+  width: 80%;
+  bottom: 10px;
+}
+
 .footer-center {
   display: flex;
-  flex-direction: row;
-  justify-content:center;
-  bottom: 10px;
+  align-items: center;
 }
 
 .footer-right {
   display: flex;
-  flex-direction: row;
-  justify-content: end;
-  bottom: 10px;
+  align-items: center;
 }
 
-.footer-right a {
+#footer-right a {
   padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
@@ -104,10 +115,10 @@ body {
   color: #5C5444;
 }
   
-.footer-right a:hover {
+#footer-right a:hover {
   color: black;
 }
 
-.footer-right a.active {
+#footer-right a.active {
   text-decoration: underline;
 }
