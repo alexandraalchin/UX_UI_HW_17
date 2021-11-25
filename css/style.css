@@ -17,10 +17,6 @@ p {
   margin-bottom: 0px;
 }
 
-.intro {
-  
-}
-
 .layout {
   display: grid;
   grid-template-columns: auto;
